@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:orientation="vertical"
+               android:gravity="center"
+               
+                android:id="@+id/this_is_splash" >
+
+    <TextView
+        android:id="@+id/example_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+                >
+<Button
+       android:id="@+id/startbutton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/red"
+       android:textColor="@color/white"
+       android:text="@string/start" 
+       
+       android:gravity="center"
+       />
+     
+</LinearLayout>
