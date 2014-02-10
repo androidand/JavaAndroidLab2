@@ -23,6 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="se.kth.csc.iprog.dinnerplanner.android.FinalView"
+            android:label="@string/title_activity_final_view" >
+        </activity>
     </application>
 
 </manifest>
