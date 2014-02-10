@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
     	//ExampleView mainView = new ExampleView(findViewById(R.id.this_is_example_view_id));
         //ExampleView mainView = new ExampleView(findViewById(R.id.this_is_splash));
         
+        
         SplashView mainView = new SplashView(findViewById(R.id.this_is_splash));
         
        
