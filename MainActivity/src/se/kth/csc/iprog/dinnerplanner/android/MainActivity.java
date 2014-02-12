@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         
        MenuView mainView = new MenuView(findViewById(R.id.this_is_menu));
        
+       
     }
 
 }
