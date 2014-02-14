@@ -90,7 +90,8 @@
     
     
     
-    <TableRow >         
+    <TableRow
+        android:id="@+id/submenu_title1_picture_row" >         
 
     
     <ImageView
