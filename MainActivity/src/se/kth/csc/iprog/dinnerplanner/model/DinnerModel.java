@@ -7,7 +7,7 @@ public class DinnerModel implements IDinnerModel {
 	
 
 	Set<Dish> dishes = new HashSet<Dish>();
-	
+	String testString  = "test";
 	/**
 	 * TODO: For Lab2 you need to implement the IDinnerModel interface.
 	 * When you do this you will have all the needed fields and methods
