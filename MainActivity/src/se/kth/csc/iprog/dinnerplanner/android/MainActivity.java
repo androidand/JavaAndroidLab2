@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
         
         //SplashView mainView = new SplashView(findViewById(R.id.this_is_splash));
         
-       MenuView mainView = new MenuView(findViewById(R.id.this_is_menu));
+       // MenuView mainView = new MenuView(findViewById(R.id.this_is_menu));
        
        
     }

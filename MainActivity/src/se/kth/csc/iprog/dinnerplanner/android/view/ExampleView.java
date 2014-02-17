@@ -16,11 +16,11 @@ public class ExampleView {
 
 		//Kan det vara dessa som krashar splash?
 		
-		TextView example = (TextView) view.findViewById(R.id.example_text);
+	//	TextView example = (TextView) view.findViewById(R.id.example_text);
 										//example.setText("Hello wöörld!");
 		
 		
-										example.setText(R.string.hello_world);
+		//								example.setText(R.string.hello_world);
 		// Setup the rest of the view layout
 	}
 

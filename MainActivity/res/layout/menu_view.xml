@@ -10,8 +10,7 @@
     <LinearLayout
         android:id="@+id/menu_top"
         android:layout_width="fill_parent"
-        android:layout_height="55dp"
-        android:layout_weight="1"
+        android:layout_height="40dp"
         android:gravity="left"
         android:orientation="horizontal" >
 
@@ -30,26 +29,25 @@
             android:gravity="left" />
 
         <TextView
-            android:id="@+id/tot_"
+            android:id="@+id/tot_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tot"
-            android:textColor="@color/white"
-            android:textSize="@dimen/MediumText" />
+            android:textSize="@dimen/SmallText" />
 
         <TextView
             android:id="@+id/tot_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="@dimen/MediumText" />
+            android:textSize="@dimen/MediumText" android:paddingLeft="@dimen/SmallText"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/menu_view_title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.14"
         android:orientation="vertical" >
 
         <TextView
@@ -69,41 +67,53 @@
         <!-- Nothing will be added to this view -->
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/menu_view_starter_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="@string/submenu_title1"
+        android:textSize="@dimen/MediumText" >
+    </TextView>
+
     <LinearLayout
-        android:id="@+id/menu_view_starter_layout"
+        android:id="@+id/final_view_thumbnails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/menu_view_starter_text"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint=""
-            android:text="@string/submenu_title1"
-            android:textSize="@dimen/MediumText" >
-        </TextView>
         <!-- XML Dish objects of Starters added programatically here -->
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu_view_MainCourse_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/menu_title"
+        android:text="@string/submenu_title2"
+        android:textSize="@dimen/MediumText" >
+    </TextView>
 
     <LinearLayout
         android:id="@+id/menu_view_mainCourse_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/menu_view_MainCourse_text"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/menu_title"
-            android:text="@string/submenu_title2"
-            android:textSize="@dimen/MediumText" >
-        </TextView>
         <!-- XML Dish objects of Main Courses added programatically here -->
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu_view_desert_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/menu_title"
+        android:text="@string/submenu_title3"
+        android:textSize="@dimen/MediumText" >
+    </TextView>
 
     <LinearLayout
         android:id="@+id/menu_view_desert_layout"
@@ -112,14 +122,6 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/menu_view_desert_text"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/menu_title"
-            android:text="@string/submenu_title3"
-            android:textSize="@dimen/MediumText" >
-        </TextView>
         <!-- XML Dish objects of Deserts added programatically here -->
     </LinearLayout>
 
@@ -127,7 +129,7 @@
         android:id="@+id/menu_view_button_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.11"
         android:gravity="center"
         android:orientation="horizontal" >
 
@@ -140,7 +142,7 @@
             android:text="@string/create"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="@dimen/MediumText" />
+            android:textSize="@dimen/LargeText" />
 
         <!-- Nothing will be added to this view -->
 

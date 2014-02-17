@@ -34,8 +34,8 @@ public class MenuView {
 
 //		TextView example2 = (TextView) view.findViewById(R.id.tot_val);
 //		example2.setText("42");
-		ImageView example3 = (ImageView) view.findViewById(R.id.imageView1);
-		example3.setImageResource(R.drawable.icecream);
+	//	ImageView example3 = (ImageView) view.findViewById(R.id.imageView1);
+	//	example3.setImageResource(R.drawable.icecream);
 		
 		
 	}
