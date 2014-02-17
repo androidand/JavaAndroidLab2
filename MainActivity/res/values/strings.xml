@@ -10,7 +10,7 @@
     <string name="tot">Total Cost:</string>
     <string name="menu_title">Choose Menu</string>
     <string name="submenu_title1">Starter</string>
-    <string name="submenu_title2">main Course</string>
+    <string name="submenu_title2">Main Course</string>
     <string name="submenu_title3">Dessert</string>
     <string name="dish">Dish x</string>
 
@@ -20,5 +20,7 @@
     <string-array name="dishes"></string-array>
 
     <string name="title_activity_final_view">FinalView</string>
+
+    <string name="create">Create</string>
 
 </resources>
