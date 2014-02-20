@@ -1,7 +1,10 @@
 package se.kth.csc.iprog.dinnerplanner.android.view;
 
+import java.util.Set;
+
 import se.kth.csc.iprog.dinnerplanner.android.R;
 import se.kth.csc.iprog.dinnerplanner.model.DinnerModel;
+import se.kth.csc.iprog.dinnerplanner.model.Dish;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -36,8 +39,15 @@ public class MenuView {
 //		example2.setText("42");
 	//	ImageView example3 = (ImageView) view.findViewById(R.id.imageView1);
 	//	example3.setImageResource(R.drawable.icecream);
+
 		
 		
 	}
-
+		public void printDishes(Set<Dish> menyn) {
+			String D;
+			TextView numberOfDishes = (TextView) view.findViewById(R.id.tot_val);
+			D=Integer.toString(menyn.size());
+			numberOfDishes.setText("");
+			numberOfDishes.append(D);
+			}
 }

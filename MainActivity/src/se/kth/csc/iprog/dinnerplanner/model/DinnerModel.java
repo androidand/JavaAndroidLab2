@@ -117,7 +117,7 @@ public class DinnerModel implements IDinnerModel {
 	@Override
 	public Set<Dish> getFullMenu() {
 		// TODO Auto-generated method stub
-		return null;
+		return dishes;
 	}
 
 	@Override
