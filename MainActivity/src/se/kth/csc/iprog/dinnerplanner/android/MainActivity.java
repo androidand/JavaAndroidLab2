@@ -32,10 +32,18 @@ public class MainActivity extends Activity {
        // MenuView mainView = new MenuView(findViewById(R.id.this_is_menu));
         MenuView mainView = new MenuView(findViewById(R.id.menu_view));
         Set<Dish> menyn = new HashSet<Dish>();
+        Set<Dish> starters = new HashSet<Dish>();
+        Set<Dish> maincourses = new HashSet<Dish>();
+        Set<Dish> deserts = new HashSet<Dish>();
 		DinnerModel modellen = new DinnerModel();
 		menyn = modellen.getFullMenu();
-		mainView.printDishes(menyn);
-		mainView.addDish(menyn.iterator().next());
+		starters = modellen.getDishesOfType(1);
+		maincourses = modellen.getDishesOfType(2);
+        deserts = modellen.getDishesOfType(3);
+        mainView.printDishes(menyn);
+		mainView.addStarters(starters);
+		mainView.addMaincourses(maincourses);
+		mainView.addDeserts(deserts);
        
     }
 

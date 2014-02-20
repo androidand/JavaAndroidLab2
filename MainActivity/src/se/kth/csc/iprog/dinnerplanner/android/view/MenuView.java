@@ -1,5 +1,6 @@
 package se.kth.csc.iprog.dinnerplanner.android.view;
 
+import java.util.Iterator;
 import java.util.Set;
 
 import se.kth.csc.iprog.dinnerplanner.android.R;
@@ -43,11 +44,50 @@ public class MenuView {
 		
 		
 	}
-	public void addDish(Dish dish){
+	public void addStarters(Set<Dish> starters ){ 
+		Dish dish;
+		Iterator<Dish> i = starters.iterator();
+		while(i.hasNext()){
+			dish = i.next();
+			
 		ImageView img = new ImageView(view.findViewById(R.id.menu_view_starter_layout).getContext());
-		img.setImageResource(dish.getImage());
 		LinearLayout v = (LinearLayout) view.findViewById(R.id.menu_view_starter_layout);
+		TextView txt = new TextView(view.findViewById(R.id.menu_view_starter_layout).getContext());
+		txt.setText(dish.getName());
+		img.setImageResource(dish.getImage());
 		v.addView(img);
+		v.addView(txt);
+		}
+	}
+	public void addMaincourses(Set<Dish> maincourses ){ 
+		Dish dish;
+		Iterator<Dish> i = maincourses.iterator();
+		while(i.hasNext()){
+			dish = i.next();
+			
+		ImageView img = new ImageView(view.findViewById(R.id.menu_view_mainCourse_layout).getContext());
+		LinearLayout v = (LinearLayout) view.findViewById(R.id.menu_view_mainCourse_layout);
+		TextView txt = new TextView(view.findViewById(R.id.menu_view_mainCourse_layout).getContext());
+		txt.setText(dish.getName());
+		img.setImageResource(dish.getImage());
+		v.addView(img);
+		v.addView(txt);
+		}
+	}
+	public void addDeserts(Set<Dish> deserts ){ 
+		Dish dish;
+		Iterator<Dish> i = deserts.iterator();
+		while(i.hasNext()){
+			dish = i.next();
+			
+		ImageView img = new ImageView(view.findViewById(R.id.menu_view_desert_layout).getContext());
+		LinearLayout v = (LinearLayout) view.findViewById(R.id.menu_view_desert_layout);
+		TextView txt = new TextView(view.findViewById(R.id.menu_view_desert_layout).getContext());
+		txt.setText(dish.getName());
+		img.setImageResource(dish.getImage());
+		v.addView(img);
+		v.addView(txt);
+		}
 	}
 		public void printDishes(Set<Dish> menyn) {
 			String D;
