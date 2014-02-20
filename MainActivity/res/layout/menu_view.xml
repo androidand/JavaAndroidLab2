@@ -39,8 +39,10 @@
             android:id="@+id/tot_val"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="@dimen/MediumText" android:paddingLeft="@dimen/SmallText"/>
+            android:paddingLeft="@dimen/SmallText"
+            android:text="@string/total_cost_Value"
+            android:textSize="@dimen/MediumText" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -121,8 +123,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical" >
-
-        <!-- XML Dish objects of Deserts added programatically here -->
     </LinearLayout>
 
     <LinearLayout
