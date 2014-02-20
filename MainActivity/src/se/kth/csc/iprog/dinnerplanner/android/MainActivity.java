@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
 		DinnerModel modellen = new DinnerModel();
 		menyn = modellen.getFullMenu();
 		mainView.printDishes(menyn);
+		mainView.addDish(menyn.iterator().next());
        
     }
 

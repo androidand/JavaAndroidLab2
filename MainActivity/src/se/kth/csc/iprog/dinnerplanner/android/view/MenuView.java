@@ -3,12 +3,12 @@ package se.kth.csc.iprog.dinnerplanner.android.view;
 import java.util.Set;
 
 import se.kth.csc.iprog.dinnerplanner.android.R;
-import se.kth.csc.iprog.dinnerplanner.model.DinnerModel;
 import se.kth.csc.iprog.dinnerplanner.model.Dish;
+import android.net.Uri;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.content.res.Resources;
 
 public class MenuView {
 
@@ -42,6 +42,12 @@ public class MenuView {
 
 		
 		
+	}
+	public void addDish(Dish dish){
+		ImageView img = new ImageView(view.findViewById(R.id.menu_view_starter_layout).getContext());
+		img.setImageResource(dish.getImage());
+		LinearLayout v = (LinearLayout) view.findViewById(R.id.menu_view_starter_layout);
+		v.addView(img);
 	}
 		public void printDishes(Set<Dish> menyn) {
 			String D;
