@@ -4,10 +4,10 @@
     <string name="app_name">DinnerPlanner</string>
     <string name="action_settings">Settings</string>
     <string name="welcomeMessage">Welcome to Dinner Planner!\n\nHere you will be able to easily plan your dinner.\n\nOn the next page start by selecting number of participants.\n\nThen select your courses.\n\nThen the magic happens!</string>
-    <string name="totalcost"> Total Cost</string>
+    <string name="total_cost"> Total Cost:</string>
     <string name="start">Start!</string>
     <string name="participants">Participants:</string>
-    <string name="tot">Total Cost:</string>
+    <string name="total_cost_Value">0</string>
     <string name="menu_title">Choose Menu</string>
     <string name="submenu_title1">Starter</string>
     <string name="submenu_title2">Main Course</string>
@@ -28,5 +28,7 @@
     <string name="back">Back</string>
 
     <string name="ingredients">Ingredients</string>
+
+    <string name="participants_Value">0</string>
 
 </resources>

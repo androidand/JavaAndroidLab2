@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/createMenuButton"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:background="@color/red"
+            android:padding="@dimen/SmallText"
+            android:text="@string/back"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/MediumText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.72" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tot_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_cost"
+            android:textSize="@dimen/SmallText" />
+
+        <TextView
+            android:id="@+id/tot_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/SmallText"
+            android:text="@string/total_cost_Value"
+            android:textSize="@dimen/MediumText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_view_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/final_view_thumbnails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/menu_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/menu_title"
+            android:text="@string/instructions"
+            android:textSize="@dimen/LargeText" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Nothing will be added to this view -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/final_view_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/participants"
+            android:textSize="@dimen/MediumText" />
+
+        <TextView
+            android:id="@+id/participants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/participants_Value"
+            android:textSize="@dimen/MediumText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/final_view_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- XML Dish objects of Main Courses added programatically here -->
+
+        <TextView
+            android:id="@+id/final_view_info_NameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/final_view_info_ContentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

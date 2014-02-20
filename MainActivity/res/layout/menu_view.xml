@@ -32,7 +32,7 @@
             android:id="@+id/tot_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tot"
+            android:text="@string/total_cost"
             android:textSize="@dimen/SmallText" />
 
         <TextView
@@ -77,7 +77,7 @@
     </TextView>
 
     <LinearLayout
-        android:id="@+id/final_view_thumbnails"
+        android:id="@+id/menu_view_starter_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
